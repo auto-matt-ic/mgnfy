@@ -1,0 +1,53 @@
+.main_bg {
+  display: block;
+  width: 800px;
+  height: 600px;
+  border: 1px solid silver;
+  background: red url("../images/cat.jpg") no-repeat;
+  background-size: 100%;
+  position: relative;
+  color: white;
+  cursor: none;
+  overflow: hidden; }
+
+.lens {
+  position: absolute;
+  z-index: 1000;
+  height: 200px;
+  width: 200px;
+  top: 0;
+  left: 0;
+  background: url("../images/cat.jpg");
+  background-size: 2800px;
+  border-radius: 50%;
+  opacity: 1; }
+  .lens .refract {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background: url("../images/cat.jpg");
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0); }
+  .lens .refract_wrap {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%; }
+
+input[type="range"] {
+  width: 80%;
+  margin-left: 10%; }
+
+ul.control-panel {
+  width: 800px;
+  padding: 0;
+  margin: 0; }
+  ul.control-panel li {
+    display: inline-block;
+    min-height: 75px;
+    width: 50%;
+    border: 1px solid silver; }
